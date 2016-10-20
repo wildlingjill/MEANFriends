@@ -1,0 +1,23 @@
+{
+  "name": "first_MEAN_project",
+  "authors": [
+    "wildlingjill <jcr1407@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-messages": "^1.5.8",
+    "moment": "^2.15.1"
+  }
+}

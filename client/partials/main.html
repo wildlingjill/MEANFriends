@@ -1,0 +1,21 @@
+<div>
+	Filter Birthday: <input type='date'>
+	<button ng-model='birthday'>Filter by Birthday</button><br><br>
+	<button><a href="#/new">Add Friend</a></button>
+	<br><br>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Show</th>
+			<th>Update</th>
+			<th>Delete</th>
+		</tr>
+		<tr ng-repeat="friend in friends | filter:birthday">
+			<td>{{friend.name.firstname}} {{friend.name.lastname}}</td>
+			<td><a href="#/show/{{friend._id}}">Show</a></td>
+			<td><a href="#/edit/{{friend._id}}">Update</a></td>
+			<td><button><a ng-click='delete(friend)'>Delete</a></button></td>
+		</tr>
+	</table>
+</div>
+
